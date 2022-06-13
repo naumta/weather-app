@@ -1,0 +1,37 @@
+<div class="wrapper-today">
+  <div class="wrapper-today-title">CURRENT WEATHER</div>
+  <div class="wrapper-today-date">{{todayDate | date: "dd.MM.yyyy"}}</div>
+</div>
+
+<div class="wrapper-today-info">
+
+  <div class="wrapper-today-info-icon">
+    <img src={{icon}} alt="img" class="wrapper-today-info-img">
+    <div class="wrapper-today-info-icon-description">{{currentWeather.weather[0].main}}</div>
+  </div>
+
+  <div class="wrapper-today-info-temp">
+    <div class="wrapper-today-info-temp-today">{{currentWeather?.main?.temp | number: "1.0-0"}} °C</div>
+    <div class="wrapper-today-info-temp-feels">Reel Feel {{currentWeather?.main?.feels_like | number: "1.0-0"}}°</div>
+  </div>
+
+  <div class="wrapper-today-info-daytime">
+    <div class="wrapper-today-info-daytime-sunrise" >
+      <div class="wrapper-today-info-daytime-sunrise-title">Sunrise:</div>
+      <div class="wrapper-today-info-daytime-sunrise-time">{{currentWeather.sys.sunrise * 1000 | date: "HH:mm a"}}</div>
+    </div>
+
+    <div class="wrapper-today-info-daytime-sunset">
+      <div class="wrapper-today-info-daytime-sunset-title">Sunset:</div>
+      <div class="wrapper-today-info-daytime-sunset-time">{{currentWeather.sys.sunset * 1000 | date: "HH:mm aaa"}}</div>
+    </div>
+
+    <div class="wrapper-today-info-daytime-duration">
+      <div class="wrapper-today-info-daytime-duration-title">Duration:</div>
+      <div class="wrapper-today-info-daytime-duration-time">{{timeDuration | date: "HH:mm"}} hr</div>
+    </div>
+
+  </div>
+
+
+</div>

@@ -1,0 +1,25 @@
+<div  class="fivedays-wrapper">
+
+  <div *ngFor="let oneDay of forecastOneDay" class="fivedays-wrapper-info" (click)=" getHourlyWeather(oneDay.dt_txt)">
+
+    <div class="fivedays-wrapper-info-day">{{oneDay?.dt_txt | date: "EEEE"}}</div>
+
+    <div class="fivedays-wrapper-info-date">{{oneDay?.dt_txt | date: "MMM dd"}}</div>
+
+    <div class="fivedays-wrapper-info-icon">
+      <img src="https://api.openweathermap.org/img/w/{{oneDay.weather[0].icon}}.png" alt="icon">
+    </div>
+
+    <div class="fivedays-wrapper-info-temp">{{oneDay?.main?.temp | number: "1.0-0"}} °C</div>
+
+    <div class="fivedays-wrapper-info-description">{{oneDay.weather[0].main}}</div>
+
+  </div>
+
+</div>
+
+<div class="hourly-wrapper">
+  <app-weather-hourly *ngFor="let hourlyWeather of hourlyWeatherEachDay" [hourlyWeather]="hourlyWeather"></app-weather-hourly>
+</div>
+
+

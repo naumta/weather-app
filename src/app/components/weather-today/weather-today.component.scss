@@ -1,0 +1,98 @@
+.wrapper-today {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em;
+  padding: 0.5em;
+}
+
+.wrapper-today-title {
+  width: 20vw;
+  font-size: 1.4em;
+  font-weight: bold;
+  color:darkmagenta;
+
+}
+
+.wrapper-today-date {
+  width: 15vw;
+  font-size: 1.4em;
+  font-weight: bold;
+  color:darkmagenta;
+  text-align: right;
+  margin-right: 0.3em;
+}
+
+/*today info*/
+.wrapper-today-info {
+  width: 95vw;
+  display: flex;
+  justify-content: space-around
+}
+
+.wrapper-today-info-icon {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-today-info-img {
+  width: 8vw;
+  padding: 0.5em;
+}
+
+.wrapper-today-info-icon-description, .wrapper-today-info-temp-feels {
+  width: 10vw;
+  font-size: 1.6em;
+  text-align: center;
+  color: darkmagenta;
+  padding: 0.2em;
+}
+
+.wrapper-today-info-temp {
+  width: 24vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 7em;
+}
+
+.wrapper-today-info-temp-today {
+  font-size: 3.7em;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 0.3em;
+  padding: 0.1em;
+}
+
+.wrapper-today-info-daytime {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.wrapper-today-info-daytime-sunrise, .wrapper-today-info-daytime-sunset, .wrapper-today-info-daytime-duration {
+  display: flex;
+  align-items: baseline;
+}
+
+.wrapper-today-info-daytime-sunrise-title, .wrapper-today-info-daytime-sunset-title, .wrapper-today-info-daytime-duration-title {
+  width: 9vw;
+  font-size: 1.6em;
+
+  color: darkmagenta;
+  padding: 0.3em;
+}
+
+.wrapper-today-info-daytime-sunrise-time, .wrapper-today-info-daytime-sunset-time, .wrapper-today-info-daytime-duration-time {
+  width: 8vw;
+  font-size: 1.3em;
+  text-align: center;
+  color: darkmagenta;
+  padding: 0.5em;
+}

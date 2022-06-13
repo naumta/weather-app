@@ -1,0 +1,19 @@
+<div class="hourly-wrapper-info">
+
+    <div class="hourly-wrapper-info-day">{{hourlyWeather?.dt_txt | date: "EEEE"}}</div>
+
+    <div class="hourly-wrapper-info-time">{{hourlyWeather?.dt_txt | date: "HH:mm a"}}</div>
+
+    <div class="hourly-wrapper-info-icon">
+      <img src="https://api.openweathermap.org/img/w/{{hourlyWeather.weather[0].icon}}.png" alt="icon">
+    </div>
+
+    <div class="hourly-wrapper-info-description">{{hourlyWeather.weather[0].main}}</div>
+
+    <div class="hourly-wrapper-info-temp">{{hourlyWeather?.main?.temp | number: "1.0-0"}} °C</div>
+
+    <div class="hourly-wrapper-info-feel">RealFeel {{hourlyWeather?.main?.feels_like | number: "1.0-0"}} °C</div>
+
+  </div>
+
+

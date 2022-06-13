@@ -1,0 +1,61 @@
+.fivedays-wrapper {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em;
+}
+
+.fivedays-wrapper-info {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid orange;
+  margin: 0.8em auto;
+}
+
+.fivedays-wrapper-info-day {
+  width: 12vw;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: darkmagenta;
+  margin-top: 0.4em;
+}
+
+.fivedays-wrapper-info-date {
+  width: 12vw;
+  font-size: 2em;
+  font-weight: bold;
+  color: orange;
+  margin-top: 0.4em;
+}
+
+.fivedays-wrapper-info-icon {
+  width: 12vw;
+}
+
+.fivedays-wrapper-info-icon  img {
+  width: 10vw;
+  padding-left: 2.7em;
+}
+
+.fivedays-wrapper-info-temp {
+  width: 12vw;
+  font-size: 1.9em;
+  font-weight: bold;
+  color: darkmagenta;
+}
+
+.fivedays-wrapper-info-description {
+  width: 12vw;
+  font-size: 1.3em;
+  color: darkmagenta;
+  margin-bottom: 0.6em;
+}
+
+.hourly-wrapper {
+  width: 95vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.2em;
+}

@@ -1,0 +1,56 @@
+.hourly-wrapper-info {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid orange;
+  margin: 0.4em auto;
+
+}
+
+.hourly-wrapper-info-day {
+  width: 7vw;
+  font-size: 1em;
+  font-weight: bold;
+  color: darkmagenta;
+  margin-top: 0.2em;
+}
+
+.hourly-wrapper-info-time {
+  width: 7vw;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: orange;
+  margin-top: 0.2em;
+}
+
+.hourly-wrapper-info-icon {
+  width: 7vw;
+}
+
+.hourly-wrapper-info-icon img {
+  width: 5vw;
+  padding-left: 2.7em;
+}
+
+.hourly-wrapper-info-description {
+  width: 7vw;
+  font-size: 1em;
+  color: darkmagenta;
+  margin-bottom: 0.3em;
+}
+
+.hourly-wrapper-info-temp {
+  width: 7vw;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: darkmagenta;
+  margin-bottom: 0.3em;
+}
+
+.hourly-wrapper-info-feel {
+  width: 7vw;
+  font-size: 1em;
+  color: darkmagenta;
+  margin-bottom: 0.3em;
+}

@@ -1,0 +1,59 @@
+.search-wrapper {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em;
+  margin-bottom: 0;
+  padding: 0.5em;
+  align-items: center;
+}
+
+.search-wrapper-title {
+  width: 20vw;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: orange;
+}
+
+.example-full-width {
+  width: 15vw;
+  margin-top: 1em;
+  padding: 0.5em;
+  position: relative;
+}
+
+.search-wrapper-icon {
+  width: 1.8em;
+  position: absolute;
+  right: 4em;
+  top: 4em;
+
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btns {
+  width: 95vw;
+  margin-left: 1.6em;
+  background-color: gainsboro;
+}
+
+.btns button {
+  width: 10vw;
+  padding: 0.4em;
+  font-size: 1.2em;
+  color: darkmagenta;
+  border: transparent;
+  background-color: gainsboro;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+.active {
+  color:orange;
+}
