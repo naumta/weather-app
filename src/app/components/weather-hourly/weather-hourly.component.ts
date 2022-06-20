@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IWeatherFiveDays } from 'src/app/shared/model/weather-app.model';
 
 @Component({
   selector: 'app-weather-hourly',

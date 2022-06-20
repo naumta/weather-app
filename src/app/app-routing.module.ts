@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { WeatherFiveDayComponent } from './components/weather-five-day/weather-five-day.component';
 import { WeatherTodayComponent } from './components/weather-today/weather-today.component';

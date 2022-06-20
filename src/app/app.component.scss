@@ -27,17 +27,13 @@
   position: absolute;
   right: 4em;
   top: 4em;
-
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .btns {
   width: 95vw;
   margin-left: 1.6em;
-  background-color: gainsboro;
+  background-color: #ddedfb;
+  box-shadow: 3px 4px 12px 4px rgba(255, 166, 0, 0.536);
 }
 
 .btns button {
@@ -46,7 +42,7 @@
   font-size: 1.2em;
   color: darkmagenta;
   border: transparent;
-  background-color: gainsboro;
+  background-color: #ddedfb;
 
   &:hover {
     cursor: pointer;
@@ -54,6 +50,3 @@
   }
 }
 
-.active {
-  color:orange;
-}

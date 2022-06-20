@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IWeatherToday } from 'src/app/shared/model/weather-app.model';
 import { WeatherService } from 'src/app/shared/service/weather.service';
 
@@ -16,9 +16,8 @@ export class WeatherTodayComponent implements OnInit {
   currentWeather!: IWeatherToday;
 
   todayDate: Date = new Date();
-  timeDuration!: number;
   icon!: string;
-
+  error!: string;
 
   constructor(private weatherService: WeatherService) { }
 
@@ -29,14 +28,9 @@ export class WeatherTodayComponent implements OnInit {
   getCurrentWeather(city: string): void {
     this.weatherService.getTodayWeather(city).subscribe((today:IWeatherToday) => {
       this.currentWeather = today;
-
-      this.timeDuration =(today?.sys?.sunrise * 1000) - (today?.sys?.sunset * 1000);
       this.icon = `${IMG_URL}/${today.weather[0].icon}.png`;
-
-      console.log(this.currentWeather);
-    }), (error: any) => {
-      console.log(error);
-    }
+      //console.log(this.currentWeather);
+    })
   }
 
 }

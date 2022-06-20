@@ -28,10 +28,15 @@
 
     <div class="wrapper-today-info-daytime-duration">
       <div class="wrapper-today-info-daytime-duration-title">Duration:</div>
-      <div class="wrapper-today-info-daytime-duration-time">{{timeDuration | date: "HH:mm"}} hr</div>
+      <div class="wrapper-today-info-daytime-duration-time">{{(currentWeather.sys.sunset * 1000) - (currentWeather.sys.sunrise * 1000) | date: "HH:mm" : "UTC"}} hr</div>
     </div>
 
   </div>
-
-
 </div>
+
+
+
+
+
+
+

@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid orange;
+  border: 2px solid orange;
   margin: 0.4em auto;
-
+  background-color: #a7d1f5;
+  box-shadow: 3px 4px 12px 4px rgba(255, 166, 0, 0.536);
 }
 
 .hourly-wrapper-info-day {

@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin: 1.2em;
   padding: 0.5em;
+
 }
 
 .wrapper-today-title {
@@ -27,7 +28,11 @@
 .wrapper-today-info {
   width: 95vw;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  margin-left: 1.8em;
+  padding-bottom: 4em;
+  background-color: #ddedfb;
+  box-shadow: 3px 4px 12px 4px rgba(255, 166, 0, 0.536);
 }
 
 .wrapper-today-info-icon {

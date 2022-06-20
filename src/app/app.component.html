@@ -6,17 +6,14 @@
     <input matInput placeholder="Minsk" value="Minsk" [(ngModel)]="city" >
   </mat-form-field>
 
-
-  <img src="assets/img/img.png" alt="" class="search-wrapper-icon"
-                                (click)=" getCurrentWeather(city)">
+  <img src="assets/img/img.png" alt="" class="search-wrapper-icon">
 
 </div>
 
 <div class="btns">
-  <button routerLink="/one-day">Today</button>
-  <button routerLink="/five-day">5-day forecast</button>
+  <button routerLink="/one-day" mat-button color="primary">Today</button>
+  <button routerLink="/five-day" mat-button color="primary">5-day forecast</button>
 </div>
-
 
 <router-outlet></router-outlet>
 

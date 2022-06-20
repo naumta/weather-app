@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IWeatherFiveDays } from 'src/app/shared/model/weather-app.model';
 import { WeatherService } from 'src/app/shared/service/weather.service';
 
@@ -17,8 +17,6 @@ export class WeatherFiveDayComponent implements OnInit {
   dtTxt: string = "";
   hourlyWeatherEachDay: IWeatherFiveDays["list"] = [];
 
-
-
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
@@ -33,6 +31,8 @@ export class WeatherFiveDayComponent implements OnInit {
       this.forecastOneDay = forecast.list.filter(data =>
         data.dt_txt.includes("15:00:00"));
         //console.log(this.forecastOneDay);
+
+
     })
   }
 
@@ -45,7 +45,7 @@ export class WeatherFiveDayComponent implements OnInit {
     for (let i = 0; i < this.fiveDays.length; i++) {
       if (this.fiveDays[i].dt_txt.includes(onlyDate)) {
         this.hourlyWeatherEachDay.push(this.fiveDays[i]);
-        console.log(this.hourlyWeatherEachDay);
+        //console.log(this.hourlyWeatherEachDay);
       }
     }
   }

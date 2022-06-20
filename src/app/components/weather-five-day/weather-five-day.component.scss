@@ -10,8 +10,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid orange;
+  border: 2px solid orange;
   margin: 0.8em auto;
+  background-color: #ddedfb;
+  box-shadow: 3px 4px 12px 4px rgba(255, 166, 0, 0.536);
+
+  &:hover {
+    cursor: pointer;
+    background-color: #bcf0f6;
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
 }
 
 .fivedays-wrapper-info-day {
@@ -43,6 +52,7 @@
   width: 12vw;
   font-size: 1.9em;
   font-weight: bold;
+  margin-bottom: 0.4em;
   color: darkmagenta;
 }
 

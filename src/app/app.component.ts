@@ -1,35 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { IWeatherToday } from './shared/model/weather-app.model';
-import { WeatherService } from './shared/service/weather.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   city: string = "Minsk";
-  currentWeather!: IWeatherToday;
 
-
-  constructor(private weatherService: WeatherService) {
+  constructor() {
 
   }
-
-  ngOnInit(): void {
-
-  }
-
-  getCurrentWeather(city: string): void {
-    this.weatherService.getTodayWeather(city).subscribe((today:IWeatherToday) => {
-      this.currentWeather = today;
-      console.log(this.currentWeather);
-    }), (error: any) => {
-      console.log(error);
-    }
-  }
-
-
 
 }
